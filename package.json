@@ -1,0 +1,26 @@
+{
+  "name": "bank-tech-test",
+  "description": "week 10 individual-challenge",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ladantork/bank-tech-test.git"
+  },
+  "author": "Ladan Torkzaban",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ladantork/bank-tech-test/issues"
+  },
+  "homepage": "https://github.com/ladantork/bank-tech-test#readme",
+  "devDependencies": {
+    "jest": "^29.0.3"
+  },
+  "dependencies": {
+    "prettier": "^2.7.1"
+  }
+}

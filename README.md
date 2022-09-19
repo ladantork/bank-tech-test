@@ -1,5 +1,5 @@
 # bank-tech-test
-week 12 individual-challenge
+week 10 individual-challenge
 
 ### Requirements
 
@@ -22,3 +22,11 @@ date || credit || debit || balance
 ```
 ## Self-assessment
 Once you have completed the challenge and feel happy with your solution, here's a form to help you reflect on the quality of your code: https://docs.google.com/forms/d/1Q-NnqVObbGLDHxlvbUfeAC7yBCf3eCjTmz6GOqC9Aeo/edit
+
+# To set-up this project
+brew install nvm
+nvm install
+npm install
+npm init
+npm install --save-dev jest
+npm i prettier
