@@ -1,12 +1,12 @@
 class Account{
     constructor(){
-        let balance = 0;
+        let balance = 0.00;
         this.newBalance = (money)=>(balance = money);
         this.getBalance = ()=> balance;
-
-        let activities = [];
         this.getActivities =()=> activities;
+        let activities = [];
         this.addActivities = (activityMode)=> activities.push(activityMode);
+       
 
 
     }
@@ -19,7 +19,7 @@ class Account{
         return this.getActivities();
     }
 
-    activity(credit, debit){
+    #activity(credit, debit){
         this.addActivities({
          date: new Date(),
          credit : credit.toFixed(2),
@@ -29,14 +29,15 @@ class Account{
     }
     deposit(money){
         this.newBalance(this.getBalance() + money);
-        this.activity(money, 0);
+        this.#activity(money, 0);
     }
-
+   
     withdraw(money){
         this.newBalance(this.getBalance() - money);
-        this.activity(0, money);
+        this.#activity(0, money);
     }
     
 }
+
 
 module.exports = Account;

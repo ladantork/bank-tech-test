@@ -1,6 +1,7 @@
 class AccountActivity{
-  constructor(account){
+  constructor(account, format){
   this.account = account;
+  this.format = format;
 
 }
 displayBalance(){
@@ -9,12 +10,20 @@ displayBalance(){
 
 credit(money){
     return this.account.deposit(money);
+    
 }
 
 debit(money){
     return this.account.withdraw(money);
+    
+}
+
+printStatement(){
+    return this.format.printStatement(this.account.activities)
 }
 
 }
+
+
 
 module.exports = AccountActivity;
